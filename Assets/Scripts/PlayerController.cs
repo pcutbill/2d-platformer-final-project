@@ -15,12 +15,12 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
 
         if (Input.GetButtonDown("Jump"))
         {
-            rb.AddForce(new Vector2(0f, 10f), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(0f, 7f), ForceMode2D.Impulse);
         }
         Vector2 force = new Vector2((Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed),0);
 
