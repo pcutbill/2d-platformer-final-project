@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -42,6 +43,19 @@ public class PlayerController : MonoBehaviour
         if(col.gameObject.CompareTag("Ground"))
         {
             inAir = false;
+        }
+
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Enemy"))
+        {
+            this.gameObject.SetActive(false);
+        }
+        if (col.gameObject.CompareTag("Win"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 

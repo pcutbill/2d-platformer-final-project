@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Death
+  - Enemy
+  - Win
   layers:
   - Default
   - TransparentFX
