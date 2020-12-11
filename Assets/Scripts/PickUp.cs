@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
+    public AudioClip pickUpSound;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        AudioSource.PlayClipAtPoint(pickUpSound, transform.position);
         this.gameObject.SetActive(false);
     }
     // Start is called before the first frame update
