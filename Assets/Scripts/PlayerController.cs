@@ -25,9 +25,13 @@ public class PlayerController : MonoBehaviour
     IEnumerator killPlayer()
     {
         this.GetComponent<Renderer>().enabled = false;
+
         AudioSource.PlayClipAtPoint(deathSound, transform.position);
 
         yield return new WaitForSeconds(1);
+        GameObject.Find("ScoreKeeper").GetComponent<Score>().ChangeScore(-100);
+        yield return new WaitForSeconds(1);
+
         this.gameObject.SetActive(false);
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
