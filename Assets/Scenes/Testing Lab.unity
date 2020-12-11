@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 1748786616}
   m_Layer: 0
   m_Name: Tilemap_Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -810,7 +810,7 @@ GameObject:
   - component: {fileID: 1899222325}
   m_Layer: 0
   m_Name: Tilemap_Platforms
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
