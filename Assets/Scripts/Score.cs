@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
+    public Text myText;
+
     public int score = 100;
 
     private static Score _instance;
@@ -13,7 +16,7 @@ public class Score : MonoBehaviour
 
     void Awake()
     {
-        if(_instance != null && _instance != this)
+        if (_instance != null && _instance != this)
         {
             Destroy(this.gameObject);
         }
@@ -22,12 +25,21 @@ public class Score : MonoBehaviour
             _instance = this;
         }
         DontDestroyOnLoad(this.gameObject);
+
+        
+    }
+
+    void Update()
+    {
+        myText = GameObject.Find("Canvas/ScoreText").GetComponent<Text>();
+        Debug.Log("update");
     }
 
     public void ChangeScore(int toAdd)
     {
         score = score + toAdd;
-        if(score <= 0)
+
+        if (score <= 0)
         {
             score = 100;
             SceneManager.LoadScene("GameOver");
