@@ -12,10 +12,14 @@ public class PlayerController : MonoBehaviour
     bool inAir = false;
     public AudioClip deathSound;
 
+    private Animator animator;
+    private SpriteRenderer sprite;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     IEnumerator killPlayer()
@@ -35,6 +39,8 @@ public class PlayerController : MonoBehaviour
         if(Input.GetButtonDown("Run"))
         {
             runMultiplier = 1.5f;
+            animator.SetBool("Running", true);
+            Debug.Log("Running");
         }
 
         if (Input.GetButtonDown("Jump") && !inAir)
@@ -44,7 +50,26 @@ public class PlayerController : MonoBehaviour
             rb.velocity = nv;
             rb.AddForce(new Vector2(0f, 10f), ForceMode2D.Impulse);
             inAir = true;
+            animator.SetBool("Airborne", true);
         }
+
+        animator.SetFloat("Vertical Motion", rb.velocity.y);
+
+        if(Input.GetAxis("Horizontal") == 0)
+        {
+            animator.SetBool("Running", false);
+        }
+        else if (Input.GetAxis("Horizontal") > 0)
+        {
+            animator.SetBool("Running", true);
+            sprite.flipX = false;
+        }
+        else if (Input.GetAxis("Horizontal") < 0)
+        {
+            animator.SetBool("Running", true);
+            sprite.flipX = true;
+        }
+
         Vector2 force = new Vector2((Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed * runMultiplier),0);
 
         rb.AddForce(force);
@@ -55,6 +80,7 @@ public class PlayerController : MonoBehaviour
         if(col.gameObject.CompareTag("Ground"))
         {
             inAir = false;
+            animator.SetBool("Airborne", false);
         }
 
     }
@@ -76,6 +102,7 @@ public class PlayerController : MonoBehaviour
         if (col.gameObject.CompareTag("Ground"))
         {
             inAir = true;
+            animator.SetBool("Airborne", true);
         }
     }
 }
