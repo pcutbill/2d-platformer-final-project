@@ -11,7 +11,8 @@ public class Victory : MonoBehaviour
     void Start()
     {
         myText = GameObject.Find("ScoreText");
-        myText.GetComponent<TextMeshProUGUI>().text = "Final score: " + GameObject.Find("ScoreKeeper").GetComponent<Score>().score.ToString();
+        int score = GameObject.Find("ScoreKeeper").GetComponent<Score>().score;
+        myText.GetComponent<TextMeshProUGUI>().text = "Final score: " + score.ToString();
     }
 
 

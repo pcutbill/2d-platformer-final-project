@@ -23,7 +23,7 @@ public class ButtonPress : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
 
-        GameObject.Find("Audio Source").SetActive(false);
+        
 
         AudioSource.PlayClipAtPoint(VictorySound, transform.position);
 
@@ -40,6 +40,7 @@ public class ButtonPress : MonoBehaviour
             GameObject.Find("PlayerTemp").GetComponent<Rigidbody2D>().isKinematic = true;
             GameObject.Find("PlayerTemp").GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0f);
             AudioSource.PlayClipAtPoint(pressSound, transform.position);
+            GameObject.Find("Audio Source").SetActive(false);
             StartCoroutine(setOffTrap());
         }
     }
