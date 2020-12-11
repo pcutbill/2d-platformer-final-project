@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public float moveSpeed = 5f;
+    public float moveSpeed = 50f;
     public Rigidbody2D rb;
 
     // Start is called before the first frame update
@@ -15,9 +15,15 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        Vector2 movement = new Vector2(Input.GetAxis("Horizontal"), 0f);
-        rb.MovePosition(rb.position += movement * Time.deltaTime * moveSpeed);
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            rb.AddForce(new Vector2(0f, 10f), ForceMode2D.Impulse);
+        }
+        Vector2 force = new Vector2((Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed),0);
+
+        rb.AddForce(force);
     }
 }
