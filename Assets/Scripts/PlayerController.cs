@@ -26,7 +26,10 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && !inAir)
         {
-            rb.AddForce(new Vector2(0f, 7f), ForceMode2D.Impulse);
+            Vector2 nv = rb.velocity;
+            nv.y = 0f;
+            rb.velocity = nv;
+            rb.AddForce(new Vector2(0f, 10f), ForceMode2D.Impulse);
             inAir = true;
         }
         Vector2 force = new Vector2((Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed * runMultiplier),0);
@@ -34,11 +37,19 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(force);
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.CompareTag("Ground"))
         {
             inAir = false;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("Ground"))
+        {
+            inAir = true;
         }
     }
 }
