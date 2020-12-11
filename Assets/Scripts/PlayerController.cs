@@ -44,13 +44,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Run"))
-        {
-            runMultiplier = 1.5f;
-            animator.SetBool("Running", true);
-            Debug.Log("Running");
-        }
-
         if (Input.GetButtonDown("Jump") && !inAir)
         {
             Vector2 nv = rb.velocity;
@@ -79,6 +72,11 @@ public class PlayerController : MonoBehaviour
         }
 
         Vector2 force = new Vector2((Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed * runMultiplier),0);
+        if (inAir)
+        {
+            force.x = force.x *.4f;
+        }
+
 
         rb.AddForce(force);
     }
