@@ -230,9 +230,9 @@ GameObject:
   - component: {fileID: 180646441}
   - component: {fileID: 180646443}
   - component: {fileID: 180646442}
+  - component: {fileID: 180646444}
   - component: {fileID: 180646446}
   - component: {fileID: 180646445}
-  - component: {fileID: 180646444}
   - component: {fileID: 180646447}
   m_Layer: 0
   m_Name: BossTrap10
@@ -27937,9 +27937,9 @@ GameObject:
   - component: {fileID: 474157479}
   - component: {fileID: 474157481}
   - component: {fileID: 474157480}
+  - component: {fileID: 474157482}
   - component: {fileID: 474157484}
   - component: {fileID: 474157483}
-  - component: {fileID: 474157482}
   - component: {fileID: 474157485}
   m_Layer: 0
   m_Name: BossTrap5
@@ -28260,6 +28260,106 @@ Tilemap:
   m_GameObject: {fileID: 500186882}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: 144, y: -8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 145, y: -8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 146, y: -8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 147, y: -8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 148, y: -8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 149, y: -8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 150, y: -8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 151, y: -8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 152, y: -8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 153, y: -8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 88, y: -6, z: 0}
     second:
       serializedVersion: 2
@@ -28390,112 +28490,12 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 144, y: -6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 145, y: -6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 146, y: -6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 147, y: -6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 148, y: -6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 149, y: -6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 150, y: -6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 151, y: -6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 152, y: -6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 153, y: -6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 23
+  - m_RefCount: 13
     m_Data: {fileID: 11400000, guid: e156304e884a554459d879fb655d1522, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 10
+    m_Data: {fileID: 11400000, guid: ce7571d6ef838b148ace936fa18525a4, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileSpriteArray:
@@ -28531,8 +28531,8 @@ Tilemap:
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: 0, y: -6, z: 0}
-  m_Size: {x: 154, y: 6, z: 1}
+  m_Origin: {x: 0, y: -8, z: 0}
+  m_Size: {x: 154, y: 8, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -28563,9 +28563,9 @@ GameObject:
   - component: {fileID: 573434489}
   - component: {fileID: 573434491}
   - component: {fileID: 573434490}
+  - component: {fileID: 573434492}
   - component: {fileID: 573434494}
   - component: {fileID: 573434493}
-  - component: {fileID: 573434492}
   - component: {fileID: 573434495}
   m_Layer: 0
   m_Name: BossTrap3
@@ -28791,9 +28791,9 @@ GameObject:
   - component: {fileID: 690493457}
   - component: {fileID: 690493459}
   - component: {fileID: 690493458}
+  - component: {fileID: 690493460}
   - component: {fileID: 690493462}
   - component: {fileID: 690493461}
-  - component: {fileID: 690493460}
   - component: {fileID: 690493463}
   m_Layer: 0
   m_Name: BossTrap6
@@ -29019,9 +29019,9 @@ GameObject:
   - component: {fileID: 841120496}
   - component: {fileID: 841120498}
   - component: {fileID: 841120497}
+  - component: {fileID: 841120499}
   - component: {fileID: 841120501}
   - component: {fileID: 841120500}
-  - component: {fileID: 841120499}
   - component: {fileID: 841120502}
   m_Layer: 0
   m_Name: BossTrap4
@@ -29287,8 +29287,9 @@ GameObject:
   - component: {fileID: 1049988342}
   - component: {fileID: 1049988341}
   - component: {fileID: 1049988340}
+  - component: {fileID: 1049988343}
   m_Layer: 8
-  m_Name: New Sprite
+  m_Name: Button
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29307,7 +29308,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.0038110986}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -29318,7 +29319,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7, y: 0.1}
+  m_Size: {x: 0.7, y: 0.10762219}
   m_EdgeRadius: 0
 --- !u!212 &1049988341
 SpriteRenderer:
@@ -29385,6 +29386,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1049988343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049988339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544c9c356ed513e438572a2b8ae53373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropSound: {fileID: 8300000, guid: 26e19616f6ba9f6469e9d3d6c38b23fe, type: 3}
+  pressSound: {fileID: 8300000, guid: 24d73765699ce3e46bb23cabc3a46494, type: 3}
 --- !u!1 &1074866146
 GameObject:
   m_ObjectHideFlags: 0
@@ -29396,9 +29411,9 @@ GameObject:
   - component: {fileID: 1074866147}
   - component: {fileID: 1074866149}
   - component: {fileID: 1074866148}
+  - component: {fileID: 1074866150}
   - component: {fileID: 1074866152}
   - component: {fileID: 1074866151}
-  - component: {fileID: 1074866150}
   - component: {fileID: 1074866153}
   m_Layer: 0
   m_Name: BossTrap2
@@ -29864,9 +29879,9 @@ GameObject:
   - component: {fileID: 1452340677}
   - component: {fileID: 1452340679}
   - component: {fileID: 1452340678}
+  - component: {fileID: 1452340680}
   - component: {fileID: 1452340682}
   - component: {fileID: 1452340681}
-  - component: {fileID: 1452340680}
   - component: {fileID: 1452340683}
   m_Layer: 0
   m_Name: BossTrap8
@@ -30092,9 +30107,9 @@ GameObject:
   - component: {fileID: 1666838613}
   - component: {fileID: 1666838615}
   - component: {fileID: 1666838614}
+  - component: {fileID: 1666838616}
   - component: {fileID: 1666838618}
   - component: {fileID: 1666838617}
-  - component: {fileID: 1666838616}
   - component: {fileID: 1666838619}
   m_Layer: 0
   m_Name: BossTrap7
@@ -30320,9 +30335,9 @@ GameObject:
   - component: {fileID: 1883534697}
   - component: {fileID: 1883534699}
   - component: {fileID: 1883534698}
+  - component: {fileID: 1883534700}
   - component: {fileID: 1883534702}
   - component: {fileID: 1883534701}
-  - component: {fileID: 1883534700}
   - component: {fileID: 1883534703}
   m_Layer: 0
   m_Name: BossTrap9
@@ -30552,12 +30567,12 @@ PrefabInstance:
     - target: {fileID: 1308911014930077149, guid: 3ab74a2840e479448b4042c78e6801a8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1308911014930077149, guid: 3ab74a2840e479448b4042c78e6801a8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 1308911014930077149, guid: 3ab74a2840e479448b4042c78e6801a8,
         type: 3}
@@ -30603,6 +30618,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerTemp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308911014930077150, guid: 3ab74a2840e479448b4042c78e6801a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308911014930077151, guid: 3ab74a2840e479448b4042c78e6801a8,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.027932763
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308911014930077151, guid: 3ab74a2840e479448b4042c78e6801a8,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.5010208
+      objectReference: {fileID: 0}
+    - target: {fileID: 4623205677169955666, guid: 3ab74a2840e479448b4042c78e6801a8,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.1925107
+      objectReference: {fileID: 0}
+    - target: {fileID: 4623205677169955666, guid: 3ab74a2840e479448b4042c78e6801a8,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.1037451
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ab74a2840e479448b4042c78e6801a8, type: 3}
