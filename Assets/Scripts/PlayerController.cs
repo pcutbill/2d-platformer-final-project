@@ -10,11 +10,23 @@ public class PlayerController : MonoBehaviour
     public float runMultiplier = 1.0f;
     public Rigidbody2D rb;
     bool inAir = false;
+    public AudioClip deathSound;
 
     // Start is called before the first frame update
     void Start()
     {
         
+    }
+
+    IEnumerator killPlayer()
+    {
+        this.GetComponent<Renderer>().enabled = false;
+        AudioSource.PlayClipAtPoint(deathSound, transform.position);
+
+        yield return new WaitForSeconds(1);
+        this.gameObject.SetActive(false);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     // Update is called once per frame
@@ -51,7 +63,7 @@ public class PlayerController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Enemy"))
         {
-            this.gameObject.SetActive(false);
+            StartCoroutine(killPlayer());
         }
         if (col.gameObject.CompareTag("Win"))
         {

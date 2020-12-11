@@ -19519,6 +19519,7 @@ GameObject:
   - component: {fileID: 1815986258}
   - component: {fileID: 1815986260}
   - component: {fileID: 1815986261}
+  - component: {fileID: 1815986262}
   m_Layer: 8
   m_Name: Spikes
   m_TagString: Enemy
@@ -20043,6 +20044,18 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &1815986262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815986256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a66596c9f0a8849982ae2383e924a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1895646889
 GameObject:
   m_ObjectHideFlags: 0
@@ -20056,7 +20069,7 @@ GameObject:
   - component: {fileID: 1895646891}
   - component: {fileID: 1895646893}
   - component: {fileID: 1895646894}
-  - component: {fileID: 1895646895}
+  - component: {fileID: 1895646896}
   m_Layer: 8
   m_Name: Barrier
   m_TagString: Untagged
@@ -20397,7 +20410,7 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
---- !u!114 &1895646895
+--- !u!114 &1895646896
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27079,9 +27092,10 @@ GameObject:
   - component: {fileID: 2123245562}
   - component: {fileID: 2123245564}
   - component: {fileID: 2123245563}
+  - component: {fileID: 2123245565}
   m_Layer: 8
   m_Name: Win
-  m_TagString: Untagged
+  m_TagString: Win
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27271,3 +27285,19 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &2123245565
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123245561}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
