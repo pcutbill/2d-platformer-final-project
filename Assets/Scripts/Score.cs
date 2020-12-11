@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class Score : MonoBehaviour
 {
-    public Text myText;
+    public GameObject myText;
 
-    public int score = 100;
+    public int score = 0;
 
     private static Score _instance;
 
@@ -25,24 +26,29 @@ public class Score : MonoBehaviour
             _instance = this;
         }
         DontDestroyOnLoad(this.gameObject);
-
-        
     }
 
     void Update()
     {
-        myText = GameObject.Find("Canvas/ScoreText").GetComponent<Text>();
-        Debug.Log("update");
+        myText = GameObject.Find("ScoreText");
+        myText.GetComponent<TextMeshProUGUI>().text = score.ToString();
     }
 
     public void ChangeScore(int toAdd)
     {
         score = score + toAdd;
 
+
+
         if (score <= 0)
         {
-            score = 100;
+            ResetScore();
             SceneManager.LoadScene("GameOver");
         }
+    }
+
+    public void ResetScore()
+    {
+        score = 0;
     }
 }

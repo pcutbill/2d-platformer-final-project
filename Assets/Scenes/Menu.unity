@@ -1551,8 +1551,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Walk, run, and jump to the end up each level.
 
-    Defeat the boss at
-    the end to win!'
+    Each fruit is worth
+    25 points. You lose 100 points every time you die.
+
+    Defeat the boss at the
+    end to win!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1792,7 +1795,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db93fa59d9accb142b013510c2776c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 100
+  myText: {fileID: 0}
+  score: 0
 --- !u!4 &1888071595
 Transform:
   m_ObjectHideFlags: 0

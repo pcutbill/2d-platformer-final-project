@@ -1,23 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonPress : MonoBehaviour
 {
     public AudioClip dropSound;
     public AudioClip pressSound;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public AudioClip VictorySound;
 
     IEnumerator setOffTrap()
     {
@@ -30,9 +20,20 @@ public class ButtonPress : MonoBehaviour
             GameObject.Find("BossTrap" + trapNum).GetComponent<Rigidbody2D>().isKinematic = false;
             trapNum++;
         }
+
+        yield return new WaitForSeconds(2f);
+
+        GameObject.Find("Audio Source").SetActive(false);
+
+        AudioSource.PlayClipAtPoint(VictorySound, transform.position);
+
+        yield return new WaitForSeconds(8f);
+
+        SceneManager.LoadScene("Victory");
+
     }
 
-    void OnTriggerExit2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Player"))
         {

@@ -8,8 +8,11 @@ public class PickUp : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        AudioSource.PlayClipAtPoint(pickUpSound, transform.position);
-        GameObject.Find("ScoreKeeper").GetComponent<Score>().ChangeScore(25);
-        this.gameObject.SetActive(false);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            AudioSource.PlayClipAtPoint(pickUpSound, transform.position);
+            this.gameObject.SetActive(false);
+            GameObject.Find("ScoreKeeper").GetComponent<Score>().ChangeScore(25);
+        }
     }
 }

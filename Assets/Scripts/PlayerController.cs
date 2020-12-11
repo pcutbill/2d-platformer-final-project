@@ -29,10 +29,14 @@ public class PlayerController : MonoBehaviour
         AudioSource.PlayClipAtPoint(deathSound, transform.position);
 
         yield return new WaitForSeconds(1);
+
         GameObject.Find("ScoreKeeper").GetComponent<Score>().ChangeScore(-100);
-        yield return new WaitForSeconds(1);
+
+        yield return new WaitForSeconds(.01f);
 
         this.gameObject.SetActive(false);
+
+        
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
