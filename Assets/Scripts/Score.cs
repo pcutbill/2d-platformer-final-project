@@ -42,8 +42,13 @@ public class Score : MonoBehaviour
 
         if (score <= 0)
         {
-            score = 0;
+            ResetScore();
             SceneManager.LoadScene("GameOver");
         }
+    }
+
+    public void ResetScore()
+    {
+        score = 0;
     }
 }
