@@ -9,7 +9,7 @@ public class Score : MonoBehaviour
 {
     public GameObject myText;
 
-    public int score = 100;
+    public int score = 0;
 
     private static Score _instance;
 
@@ -42,7 +42,7 @@ public class Score : MonoBehaviour
 
         if (score <= 0)
         {
-            score = 100;
+            score = 0;
             SceneManager.LoadScene("GameOver");
         }
     }
