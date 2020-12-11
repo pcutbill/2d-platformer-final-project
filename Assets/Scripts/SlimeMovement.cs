@@ -5,6 +5,9 @@ using UnityEngine;
 public class SlimeMovement : MonoBehaviour
 {
     public float speed;
+    public Transform groundDetection;
+
+    private bool movingRight = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +18,21 @@ public class SlimeMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.left * speed * Time.deltaTime);
+
+        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 1f);
+
+        if (groundInfo.collider == false)
+        {
+            if(movingRight == true)
+            {
+                transform.eulerAngles = new Vector3(0, -180, 0);
+                movingRight = false;
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+                movingRight = true;
+            }
+        }
     }
 }
