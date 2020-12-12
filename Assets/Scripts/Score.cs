@@ -31,7 +31,11 @@ public class Score : MonoBehaviour
     void Update()
     {
         myText = GameObject.Find("ScoreText");
-        myText.GetComponent<TextMeshProUGUI>().text = score.ToString();
+        if (myText != null)
+        {
+            myText.GetComponent<TextMeshProUGUI>().text = score.ToString();
+        }
+        
     }
 
     public void ChangeScore(int toAdd)
