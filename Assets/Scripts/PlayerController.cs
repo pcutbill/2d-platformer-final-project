@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator killPlayer()
     {
+        //animator.SetBool("Death", true);
         this.GetComponent<Renderer>().enabled = false;
 
         AudioSource.PlayClipAtPoint(deathSound, transform.position);
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(.01f);
 
+        
         this.gameObject.SetActive(false);
 
         
