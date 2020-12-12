@@ -24,5 +24,13 @@ public class Cheats : MonoBehaviour
         {
             SceneManager.LoadScene("Level 4");
         }
+        if (Input.GetButtonDown("Menu"))
+        {
+            SceneManager.LoadScene("Menu");
+        }
+        if (Input.GetButtonDown("Lives"))
+        {
+            GameObject.Find("ScoreKeeper").GetComponent<Score>().ChangeScore(1000000000);
+        }
     }
 }

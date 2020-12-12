@@ -13,7 +13,7 @@ public class VerticalScroller : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        float step = 0.001f;
+        float step = 0.004f;
         var cameraPosition = transform.position;
         cameraPosition.y += step;
         transform.position = cameraPosition;

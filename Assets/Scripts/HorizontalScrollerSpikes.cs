@@ -13,7 +13,7 @@ public class HorizontalScrollerSpikes : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        float step = 0.002f;
+        float step = 0.008f;
         var cameraPosition = transform.position;
         cameraPosition.x += step;
         if(cameraPosition.x > 150f)
