@@ -41,6 +41,7 @@ public class ButtonPress : MonoBehaviour
             GameObject.Find("PlayerTemp").GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0f);
             AudioSource.PlayClipAtPoint(pressSound, transform.position);
             GameObject.Find("Audio Source").SetActive(false);
+            GameObject.Find("Skull").GetComponent<Boss>().ButtonPressed();
             StartCoroutine(setOffTrap());
         }
     }
